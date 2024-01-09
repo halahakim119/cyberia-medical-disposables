@@ -1,7 +1,7 @@
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-20 py-16 mt-32">
+    <footer className="bg-gray-20 pt-16 mt-32">
       <div className="mx-auto w-5/6 gap-16 md:flex justify-content">
         <div className="mt-16 basis-1/2">
           <div className="flex items-center mb-10">
@@ -19,6 +19,12 @@ const Footer = () => {
           <ContactUs />
         </div>
       </div>
+      <div className="text-center pt-10 pb-5 text-xs">
+        <a href="https://swt-iq.com/" target="_blank"  >
+          Peoduced by SmartWave
+        </a>
+      </div>
+
     </footer>
   );
 };
