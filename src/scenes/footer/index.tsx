@@ -1,17 +1,27 @@
+import useMediaQuery from "@/hooks/useMediaQuery";
 
 const Footer = () => {
+
+  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   return (
     <footer className="bg-gray-20 pt-16 mt-32">
+
+
       <div className="mx-auto w-5/6 gap-16 md:flex justify-content">
-        <div className="mt-16 basis-1/2">
-          <div className="flex items-center mb-10">
-            <h1 className="text-primary-100 text-7xl font-bold mr-2">CYBERIA</h1>
-            <div className="flex flex-col">
-              <h2 className="text-secondary-500">MEDICAL</h2>
-              <h2 className="text-secondary-500">DISPOSABLES</h2>
+        <div className={`flex  ${isAboveMediumScreens ? '' : 'flex-col'}`}>
+          <h1 className="text-primary-100 text-5xl font-bold mr-2">CYBERIA</h1>
+          {isAboveMediumScreens ? (
+            <div className="flex flex-col ">
+              <h3 className="text-secondary-500">MEDICAL</h3>
+              <h3 className="text-secondary-500">DISPOSABLES</h3>
             </div>
-          </div>
+          ) : (
+            <div className="grid grid-cols">
+              <h3 className="text-secondary-500">MEDICAL DISPOSABLES</h3>
+            </div>
+          )}
         </div>
+
         <div className="mt-16 basis-1/2 md:mt-0">
           <ContactInfo />
         </div>

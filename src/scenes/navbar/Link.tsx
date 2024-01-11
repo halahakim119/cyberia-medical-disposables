@@ -13,7 +13,7 @@ const Link: React.FC<Props> = ({ page, selectedPage, setSelectedPage }: Props) =
   const lowerCasePage = page.toLowerCase().replace(/ /g, "") as SelectedPage;
 
   const linkClass = classnames({
-    "transition duration-500 hover:text-primary-300": true,
+    "transition duration-500 ": true,
     "text-secondary-500": selectedPage === lowerCasePage,
   });
 

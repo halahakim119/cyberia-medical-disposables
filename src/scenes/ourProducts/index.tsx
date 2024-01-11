@@ -2,13 +2,16 @@ import React, { useRef } from "react";
 import { SelectedPage, ClassType } from "@/shared/types";
 import { products } from './data';
 import { motion } from "framer-motion";
-import HText from "@/shared/HText";
+
 import Class from "./Product";
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
+import useMediaQuery from "@/hooks/useMediaQuery";
 
 const OurProducts: React.FC<{ setSelectedPage: (value: SelectedPage) => void }> = ({ setSelectedPage }) => {
 
   const sliderRef = useRef<HTMLDivElement>(null);
+
+  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
   const slideLeft = () => {
     if (sliderRef.current) {
@@ -21,9 +24,8 @@ const OurProducts: React.FC<{ setSelectedPage: (value: SelectedPage) => void }> 
       sliderRef.current.scrollLeft += 500;
     }
   };
-
   return (
-    <section id="ourproducts" className="w-full bg-white">
+    <section id="ourproducts" className="w-full bg-white mt-20 shadow-xl">
       <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.OurProducts)}>
         <motion.div
           className="mx-auto w-5/6"
@@ -37,7 +39,11 @@ const OurProducts: React.FC<{ setSelectedPage: (value: SelectedPage) => void }> 
           }}
         >
           <div className="md:w-full mb-20 text-center">
-            <HText>OUR PRODUCTS</HText>
+
+
+            <h1 className={` text-center  font-bold  ${isAboveMediumScreens ? "text-3xl pb-8 " : "text-2xl pb-6"}`}>
+              OUR PRODUCTS
+            </h1>
           </div>
         </motion.div>
 

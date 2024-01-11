@@ -20,10 +20,11 @@ const Sponsors = ({ setSelectedPage }: Props) => {
     const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
 
     return (
-        <>
+        <div className="m-10">
             <br id="sponsors" />
             <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Sponsors)}>
-                <h1 className="text-center font-montserrat text-3xl font-bold mb-24">
+
+                <h1 className={` text-center  font-bold  ${isAboveMediumScreens ? "text-3xl pb-20 " : "text-2xl pb-10"}`}>
                     SPONSORED BY
                 </h1>
 
@@ -73,7 +74,7 @@ const Sponsors = ({ setSelectedPage }: Props) => {
                     </div>
                 )}
             </motion.div>
-        </>
+        </div>
     );
 };
 
