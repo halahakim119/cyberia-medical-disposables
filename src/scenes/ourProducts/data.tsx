@@ -1,18 +1,18 @@
-import AngiopowerImage from "@/assets/AngiopowerTM.jpg";
-import AngiowayImage from "@/assets/AngiowayTM.jpg";
-import BalanciumImage from "@/assets/BalanciumTM.jpg";
-import DeliverImage from "@/assets/DeliverTM.jpg";
+import AngiopowerImage from "@/assets/products/AngiopowerTM.jpg";
+import AngiowayImage from "@/assets/products/AngiowayTM.jpg";
+import BalanciumImage from "@/assets/products/BalanciumTM.jpg";
+import DeliverImage from "@/assets/products/DeliverTM.jpg";
 
-import MiniTadpoleImage from "@/assets/Mini TadpoleTM.jpg";
-import NCTadpoleImage from "@/assets/NC TadpoleTM.jpg";
-import NanoPlusImage from "@/assets/Nano+TM.jpg";
-import PartnerImage from "@/assets/Partner®.jpg";
-import RaybandImage from "@/assets/RaybandTM.jpg";
-import ShoocinImage from "@/assets/ShoocinTM.jpg";
+import MiniTadpoleImage from "@/assets/products/Mini TadpoleTM.jpg";
+import NCTadpoleImage from "@/assets/products/NC TadpoleTM.jpg";
+import NanoPlusImage from "@/assets/products/Nano+TM.jpg";
+import PartnerImage from "@/assets/products/Partner®.jpg";
+import RaybandImage from "@/assets/products/RaybandTM.jpg";
+import ShoocinImage from "@/assets/products/ShoocinTM.jpg";
 
-import ThromsweeperImage from "@/assets/ThromsweeperTM.jpg";
-import UltraskinImage from "@/assets/UltraskinTM.jpg";
-import VesselinImage from "@/assets/Vesselin®.jpg";
+import ThromsweeperImage from "@/assets/products/ThromsweeperTM.jpg";
+import UltraskinImage from "@/assets/products/UltraskinTM.jpg";
+import VesselinImage from "@/assets/products/Vesselin®.jpg";
 
 
 

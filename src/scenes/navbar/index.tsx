@@ -5,6 +5,7 @@ import { SelectedPage } from "@/shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import Logo from "@/assets/CompanyLogo.png";
 
+
 type Props = {
   isTopOfPage: boolean;
   selectedPage: SelectedPage;
@@ -62,17 +63,15 @@ const Navbar: React.FC<Props> = ({ isTopOfPage, selectedPage, setSelectedPage }:
           {/* RIGHT SIDE */}
           {isAboveMediumScreens ? (
             <>
-              <div className="flex space-x-8 text-sm">
+              <div className="flex space-x-8 text-lg">
                 <Link page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                 <Link page="Benefits" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                 <Link page="Our Products" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                 <Link page="Certificates" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+                <Link page="Catalogue" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                 <Link page="Sponsors" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
               </div>
-              <p></p>
-              <p></p>
-              <p></p>
-              <p></p>
+
             </>
 
 
@@ -94,6 +93,7 @@ const Navbar: React.FC<Props> = ({ isTopOfPage, selectedPage, setSelectedPage }:
               <Link page="Benefits" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
               <Link page="Our Products" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
               <Link page="Certificates" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+              <Link page="Catalogue" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
               <Link page="Sponsors" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
             </div>
           </div>

@@ -7,14 +7,18 @@ import { SelectedPage } from "@/shared/types";
 import certificate1 from "../certificate/CE-Full Quality Assurance System.pdf";
 import certificate2 from "../certificate/Certificate Migration Letter January 2019 12022019.pdf";
 import certificate3 from "../certificate/ISO Certificate -2023-05-17至2025-06-03-New.pdf";
-import certificate1Pic from "@/assets/CE-Full Quality Assurance System-1.png";
-import certificate2Pic from "@/assets/Certificate Migration Letter January 2019 12022019-1.png";
-import certificate3Pic from "@/assets/ISO Certificate -2023-05-17至2025-06-03-New-1.png";
+import certificate1Pic from "@/assets/certificates/CE-Full Quality Assurance System-1.png";
+import certificate2Pic from "@/assets/certificates/Certificate Migration Letter January 2019 12022019-1.png";
+import certificate3Pic from "@/assets/certificates/ISO Certificate -2023-05-17至2025-06-03-New-1.png";
 import useMediaQuery from "@/hooks/useMediaQuery";
+
+
+
 
 type Props = {
     setSelectedPage: (value: SelectedPage) => void;
 };
+
 
 const Certificates: React.FC<Props> = ({ setSelectedPage }: Props) => {
     const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
@@ -27,6 +31,8 @@ const Certificates: React.FC<Props> = ({ setSelectedPage }: Props) => {
         slidesToScroll: 1,
     };
 
+
+
     return (
         <>
             <br id="certificates" />
@@ -37,7 +43,7 @@ const Certificates: React.FC<Props> = ({ setSelectedPage }: Props) => {
                     className="mx-20 my-40"
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: true, amount: 0.5 }}
+                    viewport={{ once: true, amount: 0.1 }}
                     transition={{ duration: 0.5 }}
                     variants={{
                         hidden: { opacity: 0, x: -50 },
@@ -68,6 +74,7 @@ const Certificates: React.FC<Props> = ({ setSelectedPage }: Props) => {
                     </div>
                 </motion.div>
             </motion.div>
+
         </>
     );
 };

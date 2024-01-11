@@ -1,12 +1,12 @@
 
-import Confort from "@/assets/confort.png";
-import LohmannRauscher from "@/assets/LohmannRauscher.png";
-import Kangning from "@/assets/Kangning.png";
-import Vea from "@/assets/vea.png";
-import ConfortBigger from "@/assets/confortBigger.png";
-import LohmannRauscherBigger from "@/assets/LohmannRauscherBigger.png";
-import KangningBigger from "@/assets/KangningBigger.png";
-import VeaBigger from "@/assets/veaBigger.png";
+import Confort from "@/assets/sponsors/confort.png";
+import LohmannRauscher from "@/assets/sponsors/LohmannRauscher.png";
+import Kangning from "@/assets/sponsors/Kangning.png";
+import Vea from "@/assets/sponsors/vea.png";
+import ConfortBigger from "@/assets/sponsors/confortBigger.png";
+import LohmannRauscherBigger from "@/assets/sponsors/LohmannRauscherBigger.png";
+import KangningBigger from "@/assets/sponsors/KangningBigger.png";
+import VeaBigger from "@/assets/sponsors/veaBigger.png";
 import SponsorLink from "./SponsorLink";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { SelectedPage } from "@/shared/types";

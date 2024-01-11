@@ -7,7 +7,8 @@ import Footer from "@/scenes/footer";
 import { useEffect, useState } from "react";
 import { SelectedPage } from "@/shared/types";
 import Certificate from "@/scenes/certificate";
-import Sponsors from "./scenes/sponsors";
+import Sponsors from "@/scenes/sponsors";
+import Catalogue from "@/scenes/catalogue";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
@@ -38,6 +39,7 @@ function App() {
       <Benefits setSelectedPage={setSelectedPage} />
       <OurProducts setSelectedPage={setSelectedPage} />
       <Certificate setSelectedPage={setSelectedPage} />
+      <Catalogue setSelectedPage={setSelectedPage} />
       <Sponsors setSelectedPage={setSelectedPage} />
       <Footer />
     </div>
